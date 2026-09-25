@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday ❤️</title>
+  <meta name="description" content="A little birthday surprise, made with love.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600&family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="stars" aria-hidden="true"></div>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-glow"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">A little something, just for you</p>
+        <h1>Happy Birthday,<br><span>[NAME] ❤️</span></h1>
+        <p class="hero-copy">Today isn't just another day...<br>it's the day someone incredibly special came into this world.</p>
+        <button class="primary-btn" id="openBtn">Open Your Surprise <span>✨</span></button>
+        <p class="hint">Tap when you're ready</p>
+      </div>
+      <div class="scroll-cue">scroll gently ↓</div>
+    </section>
+
+    <div class="music-wrap" id="musicWrap" aria-live="polite">
+      <button id="musicBtn" class="music-btn" aria-label="Play or pause music">♪ <span id="musicState">Music</span></button>
+      <iframe id="ytPlayer" title="Birthday music" allow="autoplay; encrypted-media" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+
+    <section class="note section">
+      <div class="paper reveal">
+        <p class="script">A little note</p>
+        <h2>A Little Note For You 💌</h2>
+        <p>
+          I don't know if words can ever explain how special you are to me,
+          but today I just want you to know that I'm really grateful that you exist.
+          You have a way of making ordinary moments feel special, and I'm lucky to have
+          memories with you that I'll always keep close to my heart.
+        </p>
+        <p class="signature">With all my heart,<br><span>[YOUR NAME]</span></p>
+      </div>
+    </section>
+
+    <section class="section memories">
+      <div class="section-heading reveal">
+        <p class="eyebrow">The moments I keep close</p>
+        <h2>Little Moments, Big Memories 📸</h2>
+        <p>Replace the placeholder images below with your own photos in <code>script.js</code>.</p>
+      </div>
+      <div class="polaroids" id="gallery"></div>
+    </section>
+
+    <section class="section story">
+      <div class="section-heading reveal">
+        <p class="eyebrow">A few chapters</p>
+        <h2>Our Little Story ✨</h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item reveal"><span>01</span><div><h3>The Beginning</h3><p>Where everything started...</p></div></article>
+        <article class="timeline-item reveal"><span>02</span><div><h3>That One Memory</h3><p>A moment that still makes me smile.</p></div></article>
+        <article class="timeline-item reveal"><span>03</span><div><h3>More Memories</h3><p>And somehow, the ordinary days became my favorite ones.</p></div></article>
+        <article class="timeline-item reveal"><span>04</span><div><h3>Today</h3><p>And now we're celebrating you. ❤️</p></div></article>
+      </div>
+    </section>
+
+    <section class="birthday-message section">
+      <div class="message-card reveal">
+        <p class="eyebrow">For your next chapter</p>
+        <h2>Today Is All About You.</h2>
+        <p>
+          I hope this year brings you countless reasons to smile, dreams that slowly
+          become reality, people who genuinely care about you, and moments you'll want
+          to remember forever.
+        </p>
+        <strong>Keep shining. Keep smiling. And never forget how special you are. ❤️</strong>
+      </div>
+    </section>
+
+    <section class="surprise section">
+      <div class="reveal">
+        <p class="eyebrow">One more thing...</p>
+        <h2>Ready?</h2>
+        <button class="primary-btn" id="surpriseBtn">One Last Surprise 🎁</button>
+      </div>
+    </section>
+
+    <section class="ending section">
+      <div class="reveal">
+        <p class="script">made with love</p>
+        <h2>Made with ❤️, just for you.</h2>
+        <p class="ending-name">[YOUR NAME]</p>
+      </div>
+    </section>
+  </main>
+
+  <div class="surprise-overlay" id="overlay" aria-hidden="true">
+    <div class="final-card">
+      <div class="cake">🕯️🎂🕯️</div>
+      <p class="script">for you</p>
+      <h2>Happy Birthday, [NAME] ❤️</h2>
+      <p>Here's to you, your dreams, your smile, and all the beautiful moments waiting for you.</p>
+      <button class="ghost-btn" id="closeBtn">Keep this moment ✨</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
